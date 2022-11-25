@@ -1,10 +1,12 @@
 import "./Directory.css"
+import "../../index.css"
+
 
 const Directory = ({ name, navigateTo, dirId }) => {
   return (
     <div className="directoryWrapper" onClick={() => navigateTo(dirId, name)}>
-        <div className="icon"/>
-        <div className="txt">{name}</div>
+        <div className="directoryIcon"/>
+        <div className="directoryTxt">{name}</div>
     </div>
     )
 };

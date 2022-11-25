@@ -1,18 +1,19 @@
 import "./File.css";
+import "../../index.css"
 
 const File = ({ name }) => {
   let imageClassName;
 
   if (name.includes("jpg")) {
-    imageClassName = "image";
+    imageClassName = "fileIcon";
   } else {
-    imageClassName = "other";
+    imageClassName = "otherIcon";
   }
 
   return (
     <div className="fileWrapper">
       <div className={imageClassName} />
-      <div className="txt">
+      <div className="fileTxt">
         {name}
       </div>
     </div>

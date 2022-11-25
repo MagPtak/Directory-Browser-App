@@ -13,9 +13,9 @@ const App = () => {
     "https://fnp5vd20r2.execute-api.us-east-1.amazonaws.com/dev/directories";
 
   const addBredcrumb = (name, id) => {
-    const temp = [...breadCrumbs];
-    temp.push({ name, id });
-    setBreadCrumbs(temp);
+    const breadCrumbsCopy = [...breadCrumbs];
+    breadCrumbsCopy.push({ name, id });
+    setBreadCrumbs(breadCrumbsCopy);
   };
 
   const getData = (id) => {
@@ -37,10 +37,10 @@ const App = () => {
   }
 
   const navigateByBreadcrumb = (id) => {
-    const temp = [...breadCrumbs];
-    const indexOfEl = temp.findIndex(el => el.id === id)
-    temp.splice(indexOfEl + 1)
-    setBreadCrumbs(temp)
+    const breadCrumbsCopy = [...breadCrumbs];
+    const indexOfEl = breadCrumbsCopy.findIndex(el => el.id === id)
+    breadCrumbsCopy.splice(indexOfEl + 1)
+    setBreadCrumbs(breadCrumbsCopy)
     getData(id)
   }
 

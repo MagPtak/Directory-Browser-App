@@ -1,15 +1,4 @@
-.directoryWrapper {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.icon {
+.directoryIcon {
     background-image: url("directory.svg");
-    background-size: cover;
-    height: 50px;
-    width: 50px;
 }
 

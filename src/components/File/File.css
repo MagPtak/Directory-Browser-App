@@ -1,38 +1,7 @@
-.image {
+.fileIcon {
     background-image: url("image.svg");
-    background-size: cover;
-    height: 50px;
-    width: 50px;
 }
 
-.other {
+.otherIcon {
     background-image: url("file.svg");
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-}
-
-.txt {
-    max-width: 70px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.fileWrapper {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.directoryWrapper {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
